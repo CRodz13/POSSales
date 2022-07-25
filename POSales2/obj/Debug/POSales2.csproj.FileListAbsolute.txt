@@ -1,0 +1,13 @@
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\bin\Debug\POSales2.exe.config
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\bin\Debug\POSales2.exe
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\bin\Debug\POSales2.pdb
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.csproj.AssemblyReference.cache
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.csproj.SuggestedBindingRedirects.cache
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.Properties.Resources.resources
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.csproj.GenerateResource.cache
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.csproj.CoreCompileInputs.cache
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.exe
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.pdb
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.MainForm.resources
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.Brand.resources
+C:\Users\CRod\Desktop\CLI\POSales2\POSales2\obj\Debug\POSales2.BrandModule.resources
