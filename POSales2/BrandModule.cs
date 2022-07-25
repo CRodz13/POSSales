@@ -17,7 +17,6 @@ namespace POSales2
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         Brand brand;
-
         public BrandModule(Brand br)
         {
             InitializeComponent();

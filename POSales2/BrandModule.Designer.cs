@@ -50,13 +50,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 44);
+            this.panel1.Size = new System.Drawing.Size(716, 44);
             this.panel1.TabIndex = 0;
             // 
             // picClose
             // 
             this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(534, 0);
+            this.picClose.Location = new System.Drawing.Point(682, 0);
             this.picClose.Name = "picClose";
             this.picClose.Size = new System.Drawing.Size(31, 34);
             this.picClose.TabIndex = 1;
@@ -78,7 +78,7 @@
             // 
             this.txtBrand.Location = new System.Drawing.Point(135, 63);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(382, 26);
+            this.txtBrand.Size = new System.Drawing.Size(552, 26);
             this.txtBrand.TabIndex = 1;
             this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
@@ -89,7 +89,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(281, 105);
+            this.btnSave.Location = new System.Drawing.Point(450, 148);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 32);
             this.btnSave.TabIndex = 2;
@@ -113,7 +113,7 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(361, 105);
+            this.btnUpdate.Location = new System.Drawing.Point(531, 148);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 32);
             this.btnUpdate.TabIndex = 3;
@@ -128,7 +128,7 @@
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(442, 105);
+            this.btnCancel.Location = new System.Drawing.Point(612, 148);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 32);
             this.btnCancel.TabIndex = 4;
@@ -139,7 +139,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(2, 117);
+            this.lblId.Location = new System.Drawing.Point(11, 160);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(22, 20);
             this.lblId.TabIndex = 5;
@@ -152,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(568, 149);
+            this.ClientSize = new System.Drawing.Size(716, 192);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);

@@ -23,7 +23,6 @@ namespace POSales2
             customizeDesign();
             cn = new SqlConnection(dbcon.myConnection());
             cn.Open();
-            //MessageBox.Show("Database is Connected");//
         }
 
 
@@ -60,10 +59,25 @@ namespace POSales2
         }
         #endregion panelSlide
 
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            lblTitle.Text = childForm.Text;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            hideSubmenu();
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -73,16 +87,19 @@ namespace POSales2
 
         private void btnProductList_Click(object sender, EventArgs e)
         {
+            openChildForm(new Product());
             hideSubmenu();
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
+            openChildForm(new Category());
             hideSubmenu();
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
+            openChildForm(new Brand());
             hideSubmenu();
         }
 
@@ -103,6 +120,7 @@ namespace POSales2
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
+            openChildForm(new Supplier());
             hideSubmenu();
         }
 
@@ -139,16 +157,6 @@ namespace POSales2
         private void btnLogout_Click(object sender, EventArgs e)
         {
             hideSubmenu();
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

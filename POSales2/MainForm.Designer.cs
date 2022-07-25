@@ -55,8 +55,9 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSlide.SuspendLayout();
             this.panelSubSetting.SuspendLayout();
             this.panelSubRecord.SuspendLayout();
@@ -64,6 +65,8 @@
             this.panelSubProduct.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelMain.SuspendLayout();
+            this.lblTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSlide
@@ -366,10 +369,11 @@
             this.btnProductList.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnProductList.Size = new System.Drawing.Size(183, 45);
             this.btnProductList.TabIndex = 3;
-            this.btnProductList.Tag = "btnDashboard";
+            this.btnProductList.Tag = "";
             this.btnProductList.Text = "Product List";
             this.btnProductList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductList.UseVisualStyleBackColor = true;
+            this.btnProductList.Click += new System.EventHandler(this.btnProductList_Click);
             // 
             // btnProduct
             // 
@@ -458,27 +462,36 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Controls.Add(this.lblTitle);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(200, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(984, 661);
+            this.panelMain.TabIndex = 2;
+            this.panelMain.Tag = "";
+            // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(321, 0);
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.lblTitle.Controls.Add(this.label1);
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(392, 37);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "TitleName";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.Size = new System.Drawing.Size(984, 52);
+            this.lblTitle.TabIndex = 0;
             // 
-            // panel4
+            // label1
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(984, 661);
-            this.panel4.TabIndex = 2;
-            this.panel4.Tag = "panelMain";
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(448, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TitleName";
             // 
             // MainForm
             // 
@@ -486,7 +499,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.ClientSize = new System.Drawing.Size(1184, 661);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSlide);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -495,7 +508,6 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Point Of Sales";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSlide.ResumeLayout(false);
             this.panelSubSetting.ResumeLayout(false);
             this.panelSubRecord.ResumeLayout(false);
@@ -504,6 +516,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.lblTitle.ResumeLayout(false);
+            this.lblTitle.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -527,7 +542,7 @@
         private System.Windows.Forms.Button btnProductList;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panelSubSetting;
         private System.Windows.Forms.Button btnStore;
@@ -537,7 +552,8 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel lblTitle;
+        private System.Windows.Forms.Label label1;
     }
 }
 

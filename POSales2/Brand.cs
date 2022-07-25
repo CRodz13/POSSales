@@ -13,7 +13,6 @@ namespace POSales2
 {
     public partial class Brand : Form
     {
-
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();

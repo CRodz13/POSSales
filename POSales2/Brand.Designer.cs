@@ -49,9 +49,9 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnMessageBrand);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 461);
+            this.panel1.Location = new System.Drawing.Point(0, 487);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 100);
+            this.panel1.Size = new System.Drawing.Size(984, 74);
             this.panel1.TabIndex = 0;
             // 
             // btnAdd
@@ -59,9 +59,9 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(907, 45);
+            this.btnAdd.Location = new System.Drawing.Point(931, 23);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 43);
+            this.btnAdd.Size = new System.Drawing.Size(50, 33);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -72,9 +72,9 @@
             this.btnMessageBrand.ForeColor = System.Drawing.Color.White;
             this.btnMessageBrand.Image = ((System.Drawing.Image)(resources.GetObject("btnMessageBrand.Image")));
             this.btnMessageBrand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMessageBrand.Location = new System.Drawing.Point(12, 33);
+            this.btnMessageBrand.Location = new System.Drawing.Point(3, 14);
             this.btnMessageBrand.Name = "btnMessageBrand";
-            this.btnMessageBrand.Size = new System.Drawing.Size(110, 58);
+            this.btnMessageBrand.Size = new System.Drawing.Size(110, 48);
             this.btnMessageBrand.TabIndex = 0;
             this.btnMessageBrand.Text = "Manage Brand";
             this.btnMessageBrand.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -105,7 +105,7 @@
             this.dgvBrand.Location = new System.Drawing.Point(0, 0);
             this.dgvBrand.Name = "dgvBrand";
             this.dgvBrand.RowHeadersVisible = false;
-            this.dgvBrand.Size = new System.Drawing.Size(984, 461);
+            this.dgvBrand.Size = new System.Drawing.Size(984, 487);
             this.dgvBrand.TabIndex = 1;
             this.dgvBrand.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBrand_CellContentClick);
             // 
@@ -122,7 +122,7 @@
             this.Column2.HeaderText = "Id";
             this.Column2.Name = "Column2";
             this.Column2.Visible = false;
-            this.Column2.Width = 47;
+            this.Column2.Width = 49;
             // 
             // Column3
             // 
