@@ -34,3 +34,5 @@ C:\Users\chris.rodriguez\Desktop\Projects\POSSales\POSales2\obj\Debug\POSales2.c
 C:\Users\chris.rodriguez\Desktop\Projects\POSSales\POSales2\bin\Debug\MetroFramework.Design.dll
 C:\Users\chris.rodriguez\Desktop\Projects\POSSales\POSales2\obj\Debug\POSales2.Supplier.resources
 C:\Users\chris.rodriguez\Desktop\Projects\POSSales\POSales2\obj\Debug\POSales2.SupplierModule.resources
+C:\Users\chris.rodriguez\Desktop\Projects\POSSales\POSales2\obj\Debug\POSales2.UserAccount.resources
+C:\Users\chris.rodriguez\Desktop\Projects\POSSales\POSales2\obj\Debug\POSales2.Cashier.resources

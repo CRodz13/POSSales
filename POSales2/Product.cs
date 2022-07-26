@@ -37,7 +37,6 @@ namespace POSales2
             }
             dr.Close();
             cn.Close();
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -82,6 +81,21 @@ namespace POSales2
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             LoadProduct();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMessageProduct_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

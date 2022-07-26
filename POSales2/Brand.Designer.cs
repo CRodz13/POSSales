@@ -53,6 +53,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 74);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnAdd
             // 
@@ -78,6 +79,7 @@
             this.btnMessageBrand.TabIndex = 0;
             this.btnMessageBrand.Text = "Manage Brand";
             this.btnMessageBrand.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMessageBrand.Click += new System.EventHandler(this.btnMessageBrand_Click);
             // 
             // dgvBrand
             // 

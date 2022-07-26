@@ -69,9 +69,8 @@
             this.dgvCategory.Location = new System.Drawing.Point(0, 0);
             this.dgvCategory.Name = "dgvCategory";
             this.dgvCategory.RowHeadersVisible = false;
-            this.dgvCategory.Size = new System.Drawing.Size(984, 561);
-            this.dgvCategory.TabIndex = 2;
-            this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellContentClick);
+            this.dgvCategory.Size = new System.Drawing.Size(984, 487);
+            this.dgvCategory.TabIndex = 3;
             // 
             // panel1
             // 
@@ -79,22 +78,21 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnMessageCategory);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 461);
+            this.panel1.Location = new System.Drawing.Point(0, 487);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 100);
-            this.panel1.TabIndex = 3;
+            this.panel1.Size = new System.Drawing.Size(984, 74);
+            this.panel1.TabIndex = 2;
             // 
             // btnAdd
             // 
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(907, 45);
+            this.btnAdd.Location = new System.Drawing.Point(931, 23);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 43);
+            this.btnAdd.Size = new System.Drawing.Size(50, 33);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnMessageCategory
             // 
@@ -102,9 +100,9 @@
             this.btnMessageCategory.ForeColor = System.Drawing.Color.White;
             this.btnMessageCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnMessageCategory.Image")));
             this.btnMessageCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMessageCategory.Location = new System.Drawing.Point(12, 33);
+            this.btnMessageCategory.Location = new System.Drawing.Point(3, 14);
             this.btnMessageCategory.Name = "btnMessageCategory";
-            this.btnMessageCategory.Size = new System.Drawing.Size(119, 58);
+            this.btnMessageCategory.Size = new System.Drawing.Size(110, 48);
             this.btnMessageCategory.TabIndex = 0;
             this.btnMessageCategory.Text = "Manage Category";
             this.btnMessageCategory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,16 +146,16 @@
             // 
             // Category
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvCategory);
+            this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Category";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CATEGORY";
+            this.Text = "Category";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -167,13 +165,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvCategory;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label btnMessageCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label btnMessageCategory;
     }
 }

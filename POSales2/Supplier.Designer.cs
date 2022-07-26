@@ -31,9 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Supplier));
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnMessageBrand = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +41,9 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnMessageSupplier = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,42 +83,6 @@
             this.dgvSupplier.TabIndex = 5;
             this.dgvSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSupplier_CellContentClick);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.btnMessageBrand);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 487);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 74);
-            this.panel1.TabIndex = 4;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(931, 23);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 33);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnMessageBrand
-            // 
-            this.btnMessageBrand.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMessageBrand.ForeColor = System.Drawing.Color.White;
-            this.btnMessageBrand.Image = ((System.Drawing.Image)(resources.GetObject("btnMessageBrand.Image")));
-            this.btnMessageBrand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMessageBrand.Location = new System.Drawing.Point(3, 14);
-            this.btnMessageBrand.Name = "btnMessageBrand";
-            this.btnMessageBrand.Size = new System.Drawing.Size(110, 48);
-            this.btnMessageBrand.TabIndex = 0;
-            this.btnMessageBrand.Text = "Manage Supplier";
-            this.btnMessageBrand.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -132,7 +96,7 @@
             this.Column8.HeaderText = "id";
             this.Column8.Name = "Column8";
             this.Column8.Visible = false;
-            this.Column8.Width = 45;
+            this.Column8.Width = 47;
             // 
             // Column2
             // 
@@ -191,6 +155,42 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.btnMessageSupplier);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 487);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 74);
+            this.panel1.TabIndex = 4;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(931, 23);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(50, 33);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnMessageSupplier
+            // 
+            this.btnMessageSupplier.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMessageSupplier.ForeColor = System.Drawing.Color.White;
+            this.btnMessageSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnMessageSupplier.Image")));
+            this.btnMessageSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMessageSupplier.Location = new System.Drawing.Point(3, 14);
+            this.btnMessageSupplier.Name = "btnMessageSupplier";
+            this.btnMessageSupplier.Size = new System.Drawing.Size(110, 48);
+            this.btnMessageSupplier.TabIndex = 0;
+            this.btnMessageSupplier.Text = "Manage Supplier";
+            this.btnMessageSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Supplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -215,7 +215,7 @@
         private System.Windows.Forms.DataGridView dgvSupplier;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label btnMessageBrand;
+        private System.Windows.Forms.Label btnMessageSupplier;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
