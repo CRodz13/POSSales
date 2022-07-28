@@ -15,7 +15,7 @@ namespace POSales2
         private string con;
         public string myConnection()
         {
-            con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris.rodriguez\Documents\DBPOSales.mdf;Integrated Security=True;Connect Timeout=30";
+            con = @"Data Source=DESKTOP-5OHKDBS;AttachDbFilename=C:\DBPOSales.mdf;Integrated Security=True;Connect Timeout=30";
             return con;
         }
 
